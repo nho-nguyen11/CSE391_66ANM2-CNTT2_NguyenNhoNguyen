@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bảng điểm</title>
+</head>
+
+<body>
+
+<h2>Bảng điểm sinh viên</h2>
+
+Họ tên:
+<input id="name">
+
+Điểm:
+<input id="score">
+
+<button id="addBtn">Thêm</button>
+<input id="search" placeholder="Tìm sinh viên">
+<select id="filter">
+<option value="all">Tất cả</option>
+<option value="Giỏi">Giỏi</option>
+<option value="Khá">Khá</option>
+<option value="Trung bình">Trung bình</option>
+<option value="Yếu">Yếu</option>
+</select>
+
+<table border="1" width="600">
+
+<thead>
+<tr>
+<th>STT</th>
+<th>Họ tên</th>
+<th id="sortScore">Điểm</th>
+<th>Xếp loại</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+<p id="stats"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
